@@ -1,6 +1,6 @@
 
 count = 0
-with open("2022/data/day04_input.txt") as f:
+with open("day04_input.txt") as f:
     lines = f.readlines()
     newstuff = []
     for line in lines:
@@ -12,9 +12,9 @@ with open("2022/data/day04_input.txt") as f:
         lower2, higher2 = [int(value) for value in pair2.split(",")]
         if lower1 >= lower2 and higher1 <= higher2:
             count += 1
-            print(lower1,higher1,lower2,higher2)
+            #print(lower1,higher1,lower2,higher2)
         elif lower2 >= lower1 and higher2 <= higher1:
             count += 1
-            print(lower1,higher1,lower2,higher2)
-        print("Count is:")
-        print(count)
+            #print(lower1,higher1,lower2,higher2)
+        #print("Count is:")
+    print(count)
